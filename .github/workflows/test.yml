@@ -1,0 +1,16 @@
+name: simple job
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build_and_test:
+    name: say hello
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: hello world
+        uses: echo "hello,kaushal"
+      # Add additional steps here
